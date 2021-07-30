@@ -103,9 +103,9 @@ function App() {
             <div id="d8" className="labelB"></div>
 
             {/* // button */}
-            <div role = "button" tabIndex={0} id="button" className={isPressed ? "button" : "buttonPressed"} onClick={handleClick} onKeyDown={() => this.setIsPressed(!isPressed)}>
-              {isPressed && <div className="buttonText">▶</div>}
-              {!isPressed && <div className="buttonTextPressed"></div>}
+            <div role = "button" tabIndex={0} id="button" className={isPressed ? "buttonUp" : "buttonDown"} onClick={handleClick} onKeyDown={() => this.setIsPressed(!isPressed)}>
+              {isPressed && <div className="buttonUpIcon"></div>}
+              {!isPressed && <div className="buttonDownIcon"></div>}
             </div>
 
           </div>
